@@ -8,7 +8,7 @@ body{
 
 .fondoGame{
     background-color: rgba(22, 248, 210, 0.192);
-    background-image: url(/assets/Fondo_laberinto.svg);
+    background-image: url(../assets/Fondo_laberinto.svg);
     display: flex;
     background-position: center;
     background-size: contain;
