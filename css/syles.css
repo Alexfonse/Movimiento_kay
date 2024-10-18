@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(139, 101, 29);
+}
+
+.fondoGame{
+    background-color: rgba(22, 248, 210, 0.192);
+    background-image: url(/assets/Fondo_laberinto.svg);
+    display: flex;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 80vh;
+}
+
+.fantasma{
+    position: relative;
+    height: 80px;
+    top: 0px;
+    left: 380px;
+    animation: Movimiento1 15s infinite;
+}
+
+.Titulo{
+    color: white;
+    text-align: center;
+}
+
+.silent-hill-text {
+    font-family: 'Mountains of Christmas', cursive; /* Fuente tipo Silent Hill */
+    color: #ffffff; /* Color gris pálido para dar un efecto frío */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombras oscuras para mayor profundidad */
+    font-size: 48px;
+    letter-spacing: 1px; /* Espaciado leve entre letras */
+    text-transform: uppercase; /* Letras mayúsculas para un efecto más fuerte */
+    filter: blur(0.5px); /* Efecto sutil de distorsión */
+    transition: all 0.3s ease;
+}
+
+.silent-hill-text:hover {
+    color: #ffffff; /* Cambiar a un blanco fantasmal al pasar el ratón */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9); /* Sombras más marcadas */
+    filter: blur(1px); /* Mayor distorsión al pasar el ratón */
+    transform: scale(1.05) rotate(-2deg); /* Leve rotación y aumento al pasar el ratón */
+}
+
+@keyframes Movimiento1 {
+    0%          {top: 80px; left: 380px; rotate: 360deg;}
+    20%         {top: 240px; left: 750px; rotate: -180deg;}
+    60%         {top: 50px; left: 390px; rotate: -180deg;}
+    100%        {top: 670px; left: 1500px; rotate: 0deg;}
+}
